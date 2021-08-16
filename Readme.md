@@ -7,7 +7,8 @@
 
 # Output
 
-```Input the NAMA KAMU: BIMANTARA HANUMPRAJA
+```
+Input the NAMA KAMU: BIMANTARA HANUMPRAJA
 Input the NAMA PASANGAN KAMU: MAUDY AYUNDA
 [1, 2, 3, 0, 0, 0, 0, 0]
 [3, 5, 3, 0, 0, 0, 0]
