@@ -4,13 +4,13 @@ from calculator import CoupleCalculator
 flask_app = Flask(__name__)
 
 
-@flask_app.route("/", methods=["GET"])
+@flask_app.route("/couple-calculator", methods=["GET"])
 def index():
     """Displaying the index page accessible at '/' """
     return render_template("index.html")
 
 
-@flask_app.route("/operation-result/", methods=["POST"])
+@flask_app.route("/couple-result", methods=["POST"])
 def operation_result():
     """Route where we send calculator form input"""
     calculator = CoupleCalculator()
