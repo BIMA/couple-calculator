@@ -1,5 +1,5 @@
 def get_name(text: str):
-    return input(f"Input the {text}: ").upper()
+    return input(f"Input the {text}: ")
 
 
 def take_least_number(n):
@@ -11,10 +11,8 @@ class CoupleCalculator:
         self.constant = "TRUELOVE"
         self.couple_number = []
 
-    def calculate(self):
-        name1 = get_name("NAMA KAMU")
-        name2 = get_name("NAMA PASANGAN KAMU")
-        couple_name = "".join(name1.split()) + "".join(name2.split())
+    def calculate(self, name1: str, name2: str):
+        couple_name = "".join(name1.upper().split()) + "".join(name2.upper().split())
         for w in self.constant:
             self.couple_number.append(couple_name.count(w))
 
@@ -29,8 +27,8 @@ class CoupleCalculator:
             couple_number = [take_least_number(n) for n in temp]
             if len(couple_number) == 2:
                 break
-        print(couple_number)
-        print(f"Kecocokan cinta antara {name1} dan {name2} sebesar", "".join([str(s) for s in couple_number]) + "%")
+        result_number = "".join([str(s) for s in couple_number]) + "%"
+        return result_number
 
 
 if __name__ == "__main__":
